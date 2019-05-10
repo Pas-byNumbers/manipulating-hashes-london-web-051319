@@ -16,7 +16,9 @@ def first_challenge
   #your code here
 contacts.collect do |person, data|
   data.collect do |key, value|
-    if value == ""
+    value.delete("strawberry")
+  end
+end
 
   #remember to return your newly altered contacts hash!
   contacts
